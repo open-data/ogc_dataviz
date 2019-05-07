@@ -1,3 +1,4 @@
+import argparse
 import babel.numbers
 import csv
 import sys
@@ -8,7 +9,17 @@ q2017 = ['2016-2017-Q4', '2017-2018-Q1', '2017-2018-Q2', '2017-2018-Q3']
 organizations_over_25k = {}
 organizations_under_25k = {}
 
-with open(sys.argv[1], 'r') as contracts_file:
+# Usage: python dv_contracts.py <path to quarterly contracts .CSV file> <path to annual contracts .CSV file>
+
+parser = argparse.ArgumentParser()
+parser.add_argument("quarterly_contracts", help="The file path of the quarterly contracts .CSV file", )
+parser.add_argument("annual_contracts", help="The file path of the consolidated annual contracts .CSV file")
+parser.parse_args()
+args = parser.parse_args()
+
+# Process the quarterly contracts over $10,000 file.
+
+with open(args.quarterly_contracts, 'r') as contracts_file:
     c_reader = csv.DictReader(contracts_file, dialect='excel')
     row_num = 0
     for c_record in c_reader:
@@ -77,24 +88,11 @@ with open(sys.argv[1], 'r') as contracts_file:
         except Exception as x:
             sys.stderr.write(repr(x))
 
-print(row_num)
-for org in organizations_over_25k:
-    for sc in organizations_over_25k[org]:
-        print("(Over 25K) Dept. {0}, SC: {4}, Service Count: {3}, Service original: {1}, "
-              "Service amendment: {2}".format(org,
-                                              organizations_over_25k[org][sc]['service_original'],
-                                              organizations_over_25k[org][sc]['service_amendment'],
-                                              organizations_over_25k[org][sc]['service_count'],
-                                              sc))
+    print('Processed {0} quarterly contracts rows'.format(row_num))
 
-for org in organizations_under_25k:
-    print("(Under 25K)Dept. {0}, Service Count: {3}, Service original: {1}, "
-          "Service amendment: {2}".format(org,
-                                          organizations_under_25k[org]['service_original'],
-                                          organizations_under_25k[org]['service_amendment'],
-                                          organizations_under_25k[org]['service_count']))
+# Process the annual consolidated contracts under $10,000 file.
 
-with open(sys.argv[2], 'r', encoding='utf-8-sig') as contractsa_file:
+with open(args.annual_contracts, 'r', encoding='utf-8-sig') as contractsa_file:
     c_reader = csv.DictReader(contractsa_file, dialect='excel')
     row_num = 0
     for c_record in c_reader:
@@ -143,10 +141,12 @@ with open(sys.argv[2], 'r', encoding='utf-8-sig') as contractsa_file:
         except Exception as x:
 
             sys.stderr.write(repr(x))
+    print('Processed {0} annual consolidated contracts rows'.format(row_num))
 
-# Under 25K Contracts
 
-with open('contracts_dv_under_25k.csv', 'w', encoding='utf-8') as outfile:
+# Create the under $25K Contracts file for data visualization
+
+with open('contracts_dv_under_25k.csv', 'w', encoding='utf-8',  newline='') as outfile:
     field_names = ['year', 'commodity_type_en', 'commodity_type_fr', 'contracts_count', 'original_value',
                    'amendment_value', 'department_en', 'department_fr']
     csv_writer = csv.DictWriter(outfile, fieldnames=field_names, dialect='excel')
@@ -184,3 +184,48 @@ with open('contracts_dv_under_25k.csv', 'w', encoding='utf-8') as outfile:
                       'department_fr': department_fr}
         csv_writer.writerow(row_values)
 
+
+# Create the over $25K Contracts file for data visualization
+
+with open('contracts_dv_over_25k.csv', 'w', encoding='utf-8',  newline='') as outfile:
+    field_names = ['year', 'commodity_type_en', 'commodity_type_fr', 'solicitation_code',
+                   'contracts_count', 'original_value',
+                   'amendment_value', 'department_en', 'department_fr']
+    csv_writer = csv.DictWriter(outfile, fieldnames=field_names, dialect='excel')
+    csv_writer.writeheader()
+
+    for org in organizations_over_25k:
+        for s_code in organizations_over_25k[org]:
+            bi_org_title = str(organizations_over_25k[org][s_code]['department']).split('|')
+            department_en = bi_org_title[0].strip()
+            department_fr = bi_org_title[1].strip() if len(bi_org_title) == 2 else department_en
+            row_values = {'year': 2017,
+                          'commodity_type_en': 'Service',
+                          'commodity_type_fr': 'Services',
+                          'solicitation_code': s_code,
+                          'contracts_count': organizations_over_25k[org][s_code]['service_count'],
+                          'original_value': organizations_over_25k[org][s_code]['service_original'],
+                          'amendment_value': organizations_over_25k[org][s_code]['service_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)
+            row_values = {'year': 2017,
+                          'commodity_type_en': 'Good',
+                          'commodity_type_fr': 'Biens',
+                          'solicitation_code': s_code,
+                          'contracts_count': organizations_over_25k[org][s_code]['goods_count'],
+                          'original_value': organizations_over_25k[org][s_code]['goods_original'],
+                          'amendment_value': organizations_over_25k[org][s_code]['goods_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)
+            row_values = {'year': 2017,
+                          'commodity_type_en': 'Construction',
+                          'commodity_type_fr': 'Construction',
+                          'solicitation_code': s_code,
+                          'contracts_count': organizations_over_25k[org][s_code]['construction_count'],
+                          'original_value': organizations_over_25k[org][s_code]['construction_original'],
+                          'amendment_value': organizations_over_25k[org][s_code]['construction_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)

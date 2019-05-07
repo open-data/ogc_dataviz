@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 # Process the quarterly contracts over $10,000 file.
 
-with open(args.quarterly_contracts, 'r') as contracts_file:
+with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file:
     c_reader = csv.DictReader(contracts_file, dialect='excel')
     row_num = 0
     for c_record in c_reader:
@@ -31,9 +31,12 @@ with open(args.quarterly_contracts, 'r') as contracts_file:
 
                 # retrieve contract values and convert to decimal values
 
-                ov = babel.numbers.parse_decimal(c_record['original_value'].replace('$', ''), locale='en_CA')
-                cv = babel.numbers.parse_decimal(c_record['contract_value'].replace('$', ''), locale='en_CA')
-                av = babel.numbers.parse_decimal(c_record['amendment_value'].replace('$', ''), locale='en_CA')
+                ov = babel.numbers.parse_decimal(c_record['original_value'].replace('$', ''), locale='en_CA') \
+                    if not c_record['original_value'] == '' else 0
+                cv = babel.numbers.parse_decimal(c_record['contract_value'].replace('$', ''), locale='en_CA') \
+                    if not c_record['contract_value'] == '' else 0
+                av = babel.numbers.parse_decimal(c_record['amendment_value'].replace('$', ''), locale='en_CA') \
+                    if not c_record['amendment_value'] == '' else 0
 
                 # retrieve the existing organization record or create it if it does not exist
 
@@ -86,7 +89,7 @@ with open(args.quarterly_contracts, 'r') as contracts_file:
                 row_num += 1
 
         except Exception as x:
-            sys.stderr.write(repr(x))
+            sys.stderr.write("Error: {0}\n".format(x))
 
     print('Processed {0} quarterly contracts rows'.format(row_num))
 

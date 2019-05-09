@@ -24,9 +24,10 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
     row_num = 0
     for c_record in c_reader:
         try:
-            if c_record['reporting_period'] in q2017:
+            solicit_code = str(c_record['solicitation_procedure_code']).strip()
+            if (c_record['reporting_period'] in q2017) and (solicit_code not in ['', 'ZC']):
                 org_id = c_record['owner_org']
-                solicit_code = c_record['solicitation_procedure_code']
+
                 current_org = {}
 
                 # retrieve contract values and convert to decimal values

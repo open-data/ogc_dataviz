@@ -1,6 +1,7 @@
 import argparse
 import babel.numbers
 import csv
+import os
 import sys
 
 
@@ -14,6 +15,7 @@ organizations_under_25k = {}
 parser = argparse.ArgumentParser()
 parser.add_argument("quarterly_contracts", help="The file path of the quarterly contracts .CSV file", )
 parser.add_argument("annual_contracts", help="The file path of the consolidated annual contracts .CSV file")
+parser.add_argument("output_directory", help="The directory where the .CSV output files should be written.")
 parser.parse_args()
 args = parser.parse_args()
 
@@ -150,7 +152,8 @@ with open(args.annual_contracts, 'r', encoding='utf-8-sig') as contractsa_file:
 
 # Create the under $25K Contracts file for data visualization
 
-with open('contracts_dv_under_25k.csv', 'w', encoding='utf-8',  newline='') as outfile:
+with open(os.path.join(args.output_directory, 'contracts_under_25k.csv'), 'w', encoding='utf-8',  newline='') as \
+        outfile:
     field_names = ['year', 'commodity_type_en', 'commodity_type_fr', 'contracts_count', 'original_value',
                    'amendment_value', 'department_en', 'department_fr']
     csv_writer = csv.DictWriter(outfile, fieldnames=field_names, dialect='excel')
@@ -191,7 +194,8 @@ with open('contracts_dv_under_25k.csv', 'w', encoding='utf-8',  newline='') as o
 
 # Create the over $25K Contracts file for data visualization
 
-with open('contracts_dv_over_25k.csv', 'w', encoding='utf-8',  newline='') as outfile:
+with open(os.path.join(args.output_directory, 'contracts_over_25k.csv'), 'w', encoding='utf-8',  newline='') as \
+        outfile:
     field_names = ['year', 'commodity_type_en', 'commodity_type_fr', 'solicitation_code',
                    'contracts_count', 'original_value',
                    'amendment_value', 'department_en', 'department_fr']

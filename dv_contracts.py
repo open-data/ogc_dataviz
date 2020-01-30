@@ -32,6 +32,7 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
     for c_record in c_reader:
         try:
             solicit_code = str(c_record['solicitation_procedure_code']).strip()
+            if solicit_code in ['Non-competitiv SO/SA'] : solicit_code = 'TN'
             if (c_record['reporting_period'] in (q2017 + q2018 + q2019)) and (solicit_code not in ['', 'ZC']):
                 org_id = c_record['owner_org']
                 if c_record['reporting_period'] in q2017:

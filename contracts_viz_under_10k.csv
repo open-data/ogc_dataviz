@@ -1,0 +1,409 @@
+year,commodity_type_en,commodity_type_fr,contracts_count,original_value,amendment_value,department_en,department_fr
+2017,Service,Services,3684,9862656.52,475833.25,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2017,Good,Biens,8897,16415452.29,-23434.59,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2017,Construction,Construction,88,383307.06,102075.57,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2018,Service,Services,2998,8898032.38,385217.23,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2018,Good,Biens,6604,13253269.65,121893.02,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2018,Construction,Construction,171,683211.96,147886.75,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada
+2017,Service,Services,375,859933.9,35279.35,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2017,Good,Biens,307,485315.11,5677.37,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2017,Construction,Construction,3,6624.93,0,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2018,Service,Services,376,1160876.92,37857.79,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2018,Good,Biens,270,446770.31,-676.89,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2018,Construction,Construction,0,0,0,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique
+2017,Service,Services,211,435738.75,50534.44,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2017,Good,Biens,34,137159.94,7247.08,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2017,Construction,Construction,0,0,0,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2018,Service,Services,182,411043.23,48913.03,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2018,Good,Biens,34,108941.64,12316.99,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2018,Construction,Construction,0,0,0,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs
+2017,Service,Services,7,44395,66147,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord
+2017,Good,Biens,2,7789,7789,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord
+2017,Construction,Construction,0,0,0,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord
+2017,Service,Services,300,567206.85,40893.84,Courts Administration Service,Service administratif des tribunaux judiciaires
+2017,Good,Biens,914,859825.52,4475.4,Courts Administration Service,Service administratif des tribunaux judiciaires
+2017,Construction,Construction,4,12422,0,Courts Administration Service,Service administratif des tribunaux judiciaires
+2018,Service,Services,358,739028.43,39779.69,Courts Administration Service,Service administratif des tribunaux judiciaires
+2018,Good,Biens,938,1358234.16,3101.6,Courts Administration Service,Service administratif des tribunaux judiciaires
+2018,Construction,Construction,18,35605.66,0,Courts Administration Service,Service administratif des tribunaux judiciaires
+2017,Service,Services,738,1290082,99492,Canada Border Services Agency,Agence des services frontaliers du Canada
+2017,Good,Biens,666,1501146,33321,Canada Border Services Agency,Agence des services frontaliers du Canada
+2017,Construction,Construction,4,5225,0,Canada Border Services Agency,Agence des services frontaliers du Canada
+2018,Service,Services,804,1440194.67,362256.44,Canada Border Services Agency,Agence des services frontaliers du Canada
+2018,Good,Biens,616,1367983.85,71572.34,Canada Border Services Agency,Agence des services frontaliers du Canada
+2018,Construction,Construction,8,18261.7,1317.07,Canada Border Services Agency,Agence des services frontaliers du Canada
+2017,Service,Services,73,187505.42,0,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail
+2017,Good,Biens,85,104528.73,0,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail
+2017,Construction,Construction,0,0,0,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail
+2017,Service,Services,224,301464.82,-1826.4,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec
+2017,Good,Biens,223,196624.04,2254.89,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec
+2017,Construction,Construction,0,0,0,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec
+2017,Service,Services,146,558793,17065,Canada Energy Regulator,La Régie de l’énergie du Canada
+2017,Good,Biens,149,567650,23500,Canada Energy Regulator,La Régie de l’énergie du Canada
+2017,Construction,Construction,0,0,0,Canada Energy Regulator,La Régie de l’énergie du Canada
+2018,Service,Services,61,255975.19,7007.04,Canada Energy Regulator,La Régie de l’énergie du Canada
+2018,Good,Biens,27,93421.02,0,Canada Energy Regulator,La Régie de l’énergie du Canada
+2018,Construction,Construction,0,0,0,Canada Energy Regulator,La Régie de l’énergie du Canada
+2017,Service,Services,443,1310898.97,235829.99,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2017,Good,Biens,2486,4453212.72,7394.48,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2017,Construction,Construction,49,129949.76,158744.85,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2018,Service,Services,427,760023.8,60365.72,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2018,Good,Biens,1193,1678358.76,-39855.34,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2018,Construction,Construction,50,98782.14,6086.15,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments
+2017,Service,Services,235,579884.51,-13851.11,Canadian Grain Commission,Commission canadienne des grains
+2017,Good,Biens,941,1340901.82,3844.02,Canadian Grain Commission,Commission canadienne des grains
+2017,Construction,Construction,4,4923.98,0,Canadian Grain Commission,Commission canadienne des grains
+2018,Service,Services,154,295823.32,5844.36,Canadian Grain Commission,Commission canadienne des grains
+2018,Good,Biens,963,1330766.01,1509.18,Canadian Grain Commission,Commission canadienne des grains
+2018,Construction,Construction,4,8571.91,0,Canadian Grain Commission,Commission canadienne des grains
+2017,Service,Services,174,620377,6530,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2017,Good,Biens,68,142640,4060,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2017,Construction,Construction,0,0,0,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2018,Service,Services,229,1061400.92,47015.87,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2018,Good,Biens,49,168581.77,4502.15,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2018,Construction,Construction,0,0,0,Canadian Human Rights Commission,Commission canadienne des droits de la personne
+2017,Service,Services,905,1670058.27,250172.03,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2017,Good,Biens,2697,4518899.83,18791.45,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2017,Construction,Construction,0,0,0,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2018,Service,Services,803,1440618.65,84842.49,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2018,Good,Biens,2336,3896436.33,1040.27,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2018,Construction,Construction,0,0,0,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada"
+2017,Service,Services,183,366704.26,5669.7,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2017,Good,Biens,141,289972.34,3390.43,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2017,Construction,Construction,0,0,0,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2018,Service,Services,217,537809.2,2524.48,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2018,Good,Biens,28,93644.06,0,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2018,Construction,Construction,0,0,0,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes
+2017,Service,Services,148,446227,86891,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada
+2017,Good,Biens,66,219053.62,4427.31,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada
+2017,Construction,Construction,0,0,0,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada
+2017,Service,Services,125,417953.93,29928.36,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2017,Good,Biens,50,177817.03,-627.5,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2017,Construction,Construction,0,0,0,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2018,Service,Services,108,421489.71,84762.2,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2018,Good,Biens,93,232658.67,2375.79,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2018,Construction,Construction,0,0,0,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire
+2017,Service,Services,22,63694,0,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada
+2017,Good,Biens,40,111694,0,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada
+2017,Construction,Construction,0,0,0,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada
+2017,Service,Services,323,952911.01,-449889.71,Canada Revenue Agency,Agence du revenu du Canada
+2017,Good,Biens,702,1296546.77,-25408.29,Canada Revenue Agency,Agence du revenu du Canada
+2017,Construction,Construction,0,0,0,Canada Revenue Agency,Agence du revenu du Canada
+2018,Service,Services,383,1076148.36,-661464.61,Canada Revenue Agency,Agence du revenu du Canada
+2018,Good,Biens,342,892348.79,-3279.43,Canada Revenue Agency,Agence du revenu du Canada
+2018,Construction,Construction,0,0,0,Canada Revenue Agency,Agence du revenu du Canada
+2017,Service,Services,168,506930.28,0,Canadian Space Agency,Agence spatiale canadienne
+2017,Good,Biens,126,432196.07,0,Canadian Space Agency,Agence spatiale canadienne
+2017,Construction,Construction,12,54058.18,0,Canadian Space Agency,Agence spatiale canadienne
+2018,Service,Services,357,549245.61,224728.99,Canadian Space Agency,Agence spatiale canadienne
+2018,Good,Biens,166,408715.46,49711.19,Canadian Space Agency,Agence spatiale canadienne
+2018,Construction,Construction,23,79609.01,17721.01,Canadian Space Agency,Agence spatiale canadienne
+2017,Service,Services,19514,30487086.77,781349.09,Correctional Service of Canada,Service correctionnel du Canada
+2017,Good,Biens,64503,80435078.98,204418.17,Correctional Service of Canada,Service correctionnel du Canada
+2017,Construction,Construction,731,3562417.37,116525.5,Correctional Service of Canada,Service correctionnel du Canada
+2018,Service,Services,19582,31630673.78,460314.25,Correctional Service of Canada,Service correctionnel du Canada
+2018,Good,Biens,68996,90938663.35,85826.63,Correctional Service of Canada,Service correctionnel du Canada
+2018,Construction,Construction,1396,4583277.39,139312.49,Correctional Service of Canada,Service correctionnel du Canada
+2017,Service,Services,139,1945360.22,655.51,Canada School of Public Service,École de la fonction publique du Canada
+2017,Good,Biens,48,866944.86,-8134.09,Canada School of Public Service,École de la fonction publique du Canada
+2017,Construction,Construction,0,0,0,Canada School of Public Service,École de la fonction publique du Canada
+2018,Service,Services,230,1242589.47,72251.84,Canada School of Public Service,École de la fonction publique du Canada
+2018,Good,Biens,75,322775.84,4882.85,Canada School of Public Service,École de la fonction publique du Canada
+2018,Construction,Construction,0,0,0,Canada School of Public Service,École de la fonction publique du Canada
+2017,Service,Services,17,162639.29,-61163.09,Canadian Transportation Agency,Office des transports du Canada
+2017,Good,Biens,6,31339.05,4100.17,Canadian Transportation Agency,Office des transports du Canada
+2017,Construction,Construction,0,0,0,Canadian Transportation Agency,Office des transports du Canada
+2017,Service,Services,5026,16026817.8,857004.12,Global Affairs Canada,Affaires mondiales Canada
+2017,Good,Biens,4777,9860235.17,220415.31,Global Affairs Canada,Affaires mondiales Canada
+2017,Construction,Construction,809,3007428.06,135626.61,Global Affairs Canada,Affaires mondiales Canada
+2018,Service,Services,5056,18576429.43,1444513.53,Global Affairs Canada,Affaires mondiales Canada
+2018,Good,Biens,5324,12019542.65,267524.54,Global Affairs Canada,Affaires mondiales Canada
+2018,Construction,Construction,829,3493353.99,264421.14,Global Affairs Canada,Affaires mondiales Canada
+2017,Service,Services,7617,27578714.03,-703945.61,Fisheries and Oceans Canada,Pêches et Océans Canada
+2017,Good,Biens,5061,17810476.36,-153915.42,Fisheries and Oceans Canada,Pêches et Océans Canada
+2017,Construction,Construction,1963,6993910.76,-5646.77,Fisheries and Oceans Canada,Pêches et Océans Canada
+2018,Service,Services,8594,36782098.29,-190853.83,Fisheries and Oceans Canada,Pêches et Océans Canada
+2018,Good,Biens,5132,19759883.23,-63723.29,Fisheries and Oceans Canada,Pêches et Océans Canada
+2018,Construction,Construction,1425,6045918.88,-7058.2,Fisheries and Oceans Canada,Pêches et Océans Canada
+2017,Service,Services,53294,57708183,93985,National Defence,Défense nationale
+2017,Good,Biens,42506,60794055,18559.27,National Defence,Défense nationale
+2017,Construction,Construction,2137,4829855.77,-9123.3,National Defence,Défense nationale
+2018,Service,Services,63462,69027333.11,147188.82,National Defence,Défense nationale
+2018,Good,Biens,62317,85423432.22,-80203.55,National Defence,Défense nationale
+2018,Construction,Construction,5411,11421901.77,-29867.86,National Defence,Défense nationale
+2017,Service,Services,1636,6248919.2,79361.69,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2017,Good,Biens,1129,3683953.7,-25130.7,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2017,Construction,Construction,197,808890.3,2634.15,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2018,Service,Services,1299,5826738,116229,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2018,Good,Biens,960,2801183,-1165,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2018,Construction,Construction,80,384835,2294,Environment and Climate Change Canada,Environnement et Changement climatique Canada
+2017,Service,Services,269,884852.36,28138.91,Elections Canada,Élections Canada
+2017,Good,Biens,9,40111.45,2995.79,Elections Canada,Élections Canada
+2017,Construction,Construction,0,0,0,Elections Canada,Élections Canada
+2018,Service,Services,215,705556.85,28006.3,Elections Canada,Élections Canada
+2018,Good,Biens,37,231151.61,5505.18,Elections Canada,Élections Canada
+2018,Construction,Construction,0,0,0,Elections Canada,Élections Canada
+2017,Service,Services,491,1559755.97,195732.73,Employment and Social Development Canada,Emploi et Développement social Canada
+2017,Good,Biens,70,209796.53,-21124.61,Employment and Social Development Canada,Emploi et Développement social Canada
+2017,Construction,Construction,4,29258.07,0,Employment and Social Development Canada,Emploi et Développement social Canada
+2018,Service,Services,421,1651916.01,-163647.49,Employment and Social Development Canada,Emploi et Développement social Canada
+2018,Good,Biens,59,140318.98,47571.43,Employment and Social Development Canada,Emploi et Développement social Canada
+2018,Construction,Construction,2,2967.51,0,Employment and Social Development Canada,Emploi et Développement social Canada
+2017,Service,Services,49,229865.19,1449.01,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2017,Good,Biens,13,50102.45,0,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2017,Construction,Construction,0,0,0,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2018,Service,Services,65,294325.33,4373.22,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2018,Good,Biens,25,97668.26,0,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2018,Construction,Construction,3,8640.91,0,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada
+2017,Service,Services,104,238195.49,-5858.82,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2017,Good,Biens,32,87766,30.92,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2017,Construction,Construction,0,0,0,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2018,Service,Services,126,185540.83,-23509.79,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2018,Good,Biens,45,132312.76,0,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2018,Construction,Construction,0,0,0,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario
+2017,Service,Services,104,376071.19,9216.87,Department of Finance Canada,Ministère des Finances Canada
+2017,Good,Biens,94,226541.89,-249.42,Department of Finance Canada,Ministère des Finances Canada
+2017,Construction,Construction,0,0,0,Department of Finance Canada,Ministère des Finances Canada
+2018,Service,Services,135,405947,26802,Department of Finance Canada,Ministère des Finances Canada
+2018,Good,Biens,67,161931,0,Department of Finance Canada,Ministère des Finances Canada
+2018,Construction,Construction,0,0,0,Department of Finance Canada,Ministère des Finances Canada
+2017,Service,Services,45,184338.17,25304.5,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2017,Good,Biens,19,70737.28,9950.03,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2017,Construction,Construction,0,0,0,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2018,Service,Services,49,148246.47,46975.53,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2018,Good,Biens,11,51915.72,575.69,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2018,Construction,Construction,0,0,0,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada
+2017,Service,Services,218,1045841,51910,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2017,Good,Biens,68,198193,1720,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2017,Construction,Construction,0,0,0,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2018,Service,Services,185,963760,56840,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2018,Good,Biens,14,50406,0,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2018,Construction,Construction,0,0,0,Office of the Commissioner for Federal Judicial Affairs Canada,Commissariat à la magistrature fédérale Canada
+2017,Service,Services,18,39510,472,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2017,Good,Biens,19,50056.95,5465.3,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2017,Construction,Construction,0,0,0,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2018,Service,Services,33,79888.04,317.8,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2018,Good,Biens,8,18483.2,-3723.13,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2018,Construction,Construction,0,0,0,Farm Products Council of Canada,Conseil des produits agricoles du Canada
+2017,Service,Services,4316,16566480.12,308318.69,Health Canada,Santé Canada
+2017,Good,Biens,2301,7367873.95,75632.75,Health Canada,Santé Canada
+2017,Construction,Construction,25,168608.55,11434.35,Health Canada,Santé Canada
+2018,Service,Services,5418,15457422.28,198870.46,Health Canada,Santé Canada
+2018,Good,Biens,1284,3983433.12,48037.93,Health Canada,Santé Canada
+2018,Construction,Construction,35,142170.29,4447.19,Health Canada,Santé Canada
+2017,Service,Services,1997,4042520.65,74468.27,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2017,Good,Biens,575,1886113.02,5350.29,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2017,Construction,Construction,18,73659.6,676.72,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2018,Service,Services,2222,4563625.57,113217.88,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2018,Good,Biens,699,2137634.07,12507.61,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2018,Construction,Construction,5,21735.59,0,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada"
+2018,Service,Services,37,190843.31,2881.54,Infrastructure Canada,Infrastructure Canada
+2018,Good,Biens,20,89657.18,15.79,Infrastructure Canada,Infrastructure Canada
+2018,Construction,Construction,0,0,0,Infrastructure Canada,Infrastructure Canada
+2017,Service,Services,15,69342.78,2260,Infrastructure Canada,Infrastructure Canada
+2017,Good,Biens,12,54758.77,20127.26,Infrastructure Canada,Infrastructure Canada
+2017,Construction,Construction,0,0,0,Infrastructure Canada,Infrastructure Canada
+2017,Service,Services,1408,3130804,330976,Department of Justice Canada,Ministère de la Justice Canada
+2017,Good,Biens,556,1153341,27763,Department of Justice Canada,Ministère de la Justice Canada
+2017,Construction,Construction,0,0,0,Department of Justice Canada,Ministère de la Justice Canada
+2018,Service,Services,1349,3227493.43,197925.7,Department of Justice Canada,Ministère de la Justice Canada
+2018,Good,Biens,444,984886.09,6216.5,Department of Justice Canada,Ministère de la Justice Canada
+2018,Construction,Construction,0,0,0,Department of Justice Canada,Ministère de la Justice Canada
+2017,Service,Services,99,320652.05,4998.48,Library and Archives Canada,Bibliothèque et Archives Canada
+2017,Good,Biens,90,344641.29,5197.42,Library and Archives Canada,Bibliothèque et Archives Canada
+2017,Construction,Construction,2,15384.95,0,Library and Archives Canada,Bibliothèque et Archives Canada
+2018,Service,Services,78,277308.16,12294.4,Library and Archives Canada,Bibliothèque et Archives Canada
+2018,Good,Biens,74,227258.26,194.48,Library and Archives Canada,Bibliothèque et Archives Canada
+2018,Construction,Construction,0,0,0,Library and Archives Canada,Bibliothèque et Archives Canada
+2017,Service,Services,22,160620.07,23222.33,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2017,Good,Biens,20,102634.3,6316.7,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2017,Construction,Construction,0,0,0,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2018,Service,Services,24,69317.17,3241.02,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2018,Good,Biens,39,136825.53,10041.18,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2018,Construction,Construction,0,0,0,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires
+2017,Service,Services,23,154396.1,-6068.97,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2017,Good,Biens,14,49810.15,0,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2017,Construction,Construction,0,0,0,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2018,Service,Services,48,222605,48775,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2018,Good,Biens,12,23181,695,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2018,Construction,Construction,0,0,0,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada
+2017,Service,Services,4683,6552025.82,0,National Film Board,Office national du film
+2017,Good,Biens,626,746138.07,0,National Film Board,Office national du film
+2017,Construction,Construction,0,0,0,National Film Board,Office national du film
+2018,Service,Services,4843,7671816.96,218554.32,National Film Board,Office national du film
+2018,Good,Biens,533,683573.1,34839.92,National Film Board,Office national du film
+2018,Construction,Construction,10,18779.52,13.32,National Film Board,Office national du film
+2017,Service,Services,2456,5929164.8,492315.08,Natural Resources Canada,Ressources naturelles Canada
+2017,Good,Biens,1560,3704453.06,105794.97,Natural Resources Canada,Ressources naturelles Canada
+2017,Construction,Construction,94,264779.33,3414.46,Natural Resources Canada,Ressources naturelles Canada
+2018,Service,Services,2287,5797869.05,491540.4,Natural Resources Canada,Ressources naturelles Canada
+2018,Good,Biens,1514,3755531.17,49283.07,Natural Resources Canada,Ressources naturelles Canada
+2018,Construction,Construction,64,145275.11,43221.51,Natural Resources Canada,Ressources naturelles Canada
+2017,Service,Services,2864,8960838.23,-24387.37,National Research Council Canada,Conseil national de recherches Canada
+2017,Good,Biens,10321,20193556.31,-43598.64,National Research Council Canada,Conseil national de recherches Canada
+2017,Construction,Construction,99,488614.11,69834.58,National Research Council Canada,Conseil national de recherches Canada
+2018,Service,Services,4651,9442339.09,18781447.27,National Research Council Canada,Conseil national de recherches Canada
+2018,Good,Biens,11564,18663106.34,118340.93,National Research Council Canada,Conseil national de recherches Canada
+2018,Construction,Construction,166,387325.45,162154.89,National Research Council Canada,Conseil national de recherches Canada
+2017,Service,Services,110,210744.92,-3520.51,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada
+2017,Good,Biens,84,188696.19,3979.24,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada
+2017,Construction,Construction,0,0,0,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada
+2017,Service,Services,224,1511165.09,36164.33,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2017,Good,Biens,77,285980.93,-2289.44,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2017,Construction,Construction,0,0,0,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2018,Service,Services,155,1134473.81,33904.32,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2018,Good,Biens,92,336232.02,1058.47,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2018,Construction,Construction,0,0,0,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada
+2018,Service,Services,10,13099.55,3874.15,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada
+2018,Good,Biens,2,3263.58,0,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada
+2018,Construction,Construction,0,0,0,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada
+2017,Service,Services,14,81992,16313,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2017,Good,Biens,8,22424,2676,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2017,Construction,Construction,0,0,0,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2018,Service,Services,15,32832.25,0,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2018,Good,Biens,14,41258.93,9172.65,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2018,Construction,Construction,0,0,0,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada
+2017,Service,Services,112,355673.27,50883.89,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2017,Good,Biens,53,139056.19,2421.38,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2017,Construction,Construction,0,0,0,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2018,Service,Services,48,214783.92,40740.1,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2018,Good,Biens,69,243913.01,1103.8,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2018,Construction,Construction,0,0,0,Office of the Commissioner of Official Languages,Commissariat aux langues officielles
+2017,Service,Services,34,156231.31,0,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2017,Good,Biens,59,102007,-1305.9,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2017,Construction,Construction,0,0,0,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2018,Service,Services,15,65604.97,13157.84,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2018,Good,Biens,33,128803.28,18182.5,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2018,Construction,Construction,0,0,0,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada
+2017,Service,Services,71,256386.48,5592.48,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2017,Good,Biens,50,183080.67,0,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2017,Construction,Construction,0,0,0,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2018,Service,Services,122,362513.18,88302.98,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2018,Good,Biens,55,142662,0,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2018,Construction,Construction,0,0,0,Office of the Privacy Commissioner of Canada,Commissariats à l’information et à la protection de la vie privée au Canada
+2017,Service,Services,179,550588.95,31960.45,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2017,Good,Biens,212,716896.37,30078.32,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2017,Construction,Construction,0,0,0,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2018,Service,Services,160,607620.08,94599.73,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2018,Good,Biens,134,442517.39,63391.63,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2018,Construction,Construction,0,0,0,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada
+2017,Service,Services,78,284961,24750,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2017,Good,Biens,37,141600,-5378,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2017,Construction,Construction,0,0,0,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2018,Service,Services,91,207276.5,25749.84,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2018,Good,Biens,42,129323.79,-4396.81,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2018,Construction,Construction,0,0,0,Office of the Secretary to the Governor General,Bureau du secrétaire du gouverneur général
+2017,Service,Services,94,196257,5755,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2017,Good,Biens,79,114557,-64,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2017,Construction,Construction,0,0,0,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2018,Service,Services,143,406736.12,-9963.38,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2018,Good,Biens,94,184025.19,3368.29,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2018,Construction,Construction,0,0,0,Parole Board of Canada,Commission des libérations conditionnelles du Canada
+2017,Service,Services,6471,11957986.69,1214201.29,Parks Canada,Parcs Canada
+2017,Good,Biens,5910,11451046.98,47919.42,Parks Canada,Parcs Canada
+2017,Construction,Construction,483,1105824.97,435930.65,Parks Canada,Parcs Canada
+2018,Service,Services,6293,11924752.21,1211093.25,Parks Canada,Parcs Canada
+2018,Good,Biens,5168,9435156.58,92134.48,Parks Canada,Parcs Canada
+2018,Construction,Construction,496,938455.84,465609.01,Parks Canada,Parcs Canada
+2017,Service,Services,1486,3123782.87,278278.73,Canadian Heritage,Patrimoine canadien
+2017,Good,Biens,348,894159.27,3793.31,Canadian Heritage,Patrimoine canadien
+2017,Construction,Construction,16,28213.44,5137.65,Canadian Heritage,Patrimoine canadien
+2018,Service,Services,1386,2898225.62,290680.22,Canadian Heritage,Patrimoine canadien
+2018,Good,Biens,193,595451.11,21962.47,Canadian Heritage,Patrimoine canadien
+2018,Construction,Construction,41,97775.75,-164.71,Canadian Heritage,Patrimoine canadien
+2017,Service,Services,506,2731069.07,342125.32,Public Health Agency of Canada,Agence de la santé publique du Canada
+2017,Good,Biens,1014,4993861.84,15897.42,Public Health Agency of Canada,Agence de la santé publique du Canada
+2017,Construction,Construction,96,396795.27,13309.33,Public Health Agency of Canada,Agence de la santé publique du Canada
+2018,Service,Services,592,2277689.84,274825.1,Public Health Agency of Canada,Agence de la santé publique du Canada
+2018,Good,Biens,1216,5811787.93,-8418.11,Public Health Agency of Canada,Agence de la santé publique du Canada
+2018,Construction,Construction,128,416333.06,3628.35,Public Health Agency of Canada,Agence de la santé publique du Canada
+2017,Service,Services,57,152633,3322.2,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2017,Good,Biens,62,51696.5,56.5,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2017,Construction,Construction,0,0,0,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2018,Service,Services,63,181178.5,2983.2,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2018,Good,Biens,38,388895.13,0,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2018,Construction,Construction,0,0,0,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada
+2017,Service,Services,156,436087.51,47103.41,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2017,Good,Biens,65,164812.32,2731.18,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2017,Construction,Construction,0,0,0,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2018,Service,Services,107,303154.73,39402.8,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2018,Good,Biens,56,129077.76,3415.33,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2018,Construction,Construction,0,0,0,Public Prosecution Service of Canada,Service des poursuites pénales du Canada
+2017,Service,Services,572,1171348.68,9777.34,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2017,Good,Biens,31,138343.53,692.02,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2017,Construction,Construction,0,0,0,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2018,Service,Services,510,1100405.31,4970,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2018,Good,Biens,15,65437.77,11892.4,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2018,Construction,Construction,0,0,0,Public Service Commission of Canada,Commission de la fonction publique du Canada
+2017,Service,Services,49,123222.15,9472.23,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada
+2017,Good,Biens,14,51491.08,101.7,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada
+2017,Construction,Construction,0,0,0,Office of the Public Sector Integrity Commissioner of Canada,Commissariat à l'intégrité du secteur public du Canada
+2017,Service,Services,399,911526.25,151225,Public Safety Canada,Sécurité publique Canada
+2017,Good,Biens,110,256581.99,26081.81,Public Safety Canada,Sécurité publique Canada
+2017,Construction,Construction,0,0,0,Public Safety Canada,Sécurité publique Canada
+2018,Service,Services,186,571914.77,7215.45,Public Safety Canada,Sécurité publique Canada
+2018,Good,Biens,52,153982.6,3346.8,Public Safety Canada,Sécurité publique Canada
+2018,Construction,Construction,0,0,0,Public Safety Canada,Sécurité publique Canada
+2017,Service,Services,10332,214558913.42,2405578.12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2017,Good,Biens,1187,14964098.92,389413.74,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2017,Construction,Construction,5053,310823278.43,1688588.83,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2018,Service,Services,8555,20592474.96,495945.59,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2018,Good,Biens,1313,4488687.97,97876.2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2018,Construction,Construction,4896,17814086.94,361343.02,Public Services and Procurement Canada,Services publics et Approvisionnement Canada
+2017,Service,Services,2356,6649019.76,960399.79,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2017,Good,Biens,3151,9289832.23,37565.84,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2017,Construction,Construction,102,680859.63,960399.79,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2018,Service,Services,1556,4019799.4,418167.58,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2018,Good,Biens,2566,7803283.95,89303.73,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2018,Construction,Construction,170,1066786.8,295808.96,Royal Canadian Mounted Police,Gendarmerie royale du Canada
+2017,Service,Services,1077,1783696.94,75078.21,Shared Services Canada,Services partagés Canada
+2017,Good,Biens,624,1861708.9,121798.04,Shared Services Canada,Services partagés Canada
+2017,Construction,Construction,237,689976.3,4196.6,Shared Services Canada,Services partagés Canada
+2018,Service,Services,1135,1711341.02,-235958.06,Shared Services Canada,Services partagés Canada
+2018,Good,Biens,565,1827438.84,163022.23,Shared Services Canada,Services partagés Canada
+2018,Construction,Construction,243,648365.46,30182.24,Shared Services Canada,Services partagés Canada
+2017,Service,Services,29,46260.63,-859.7,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada
+2017,Good,Biens,20,44137.61,120.35,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada
+2017,Construction,Construction,0,0,0,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada
+2017,Service,Services,146,361364.58,3998.45,Statistics Canada,Statistique Canada
+2017,Good,Biens,206,789389.71,6437.72,Statistics Canada,Statistique Canada
+2017,Construction,Construction,0,0,0,Statistics Canada,Statistique Canada
+2018,Service,Services,105,304023.43,75.14,Statistics Canada,Statistique Canada
+2018,Good,Biens,63,243518.55,316.97,Statistics Canada,Statistique Canada
+2018,Construction,Construction,0,0,0,Statistics Canada,Statistique Canada
+2018,Service,Services,161,555367.03,34450.64,Status of Women Canada,Condition féminine Canada
+2018,Good,Biens,24,78240.45,9221.42,Status of Women Canada,Condition féminine Canada
+2018,Construction,Construction,0,0,0,Status of Women Canada,Condition féminine Canada
+2017,Service,Services,69,309645.81,38182.14,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2017,Good,Biens,23,102206.88,2682.59,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2017,Construction,Construction,0,0,0,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2018,Service,Services,117,380754.56,82714.59,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2018,Good,Biens,41,186363.52,12821.96,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2018,Construction,Construction,0,0,0,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada
+2017,Service,Services,946,2511593.4,174233.37,Transport Canada,Transports Canada
+2017,Good,Biens,2839,5641792.34,134379.47,Transport Canada,Transports Canada
+2017,Construction,Construction,0,0,0,Transport Canada,Transports Canada
+2018,Service,Services,1086,3491096.71,153848.35,Transport Canada,Transports Canada
+2018,Good,Biens,3324,6910125.59,181407.3,Transport Canada,Transports Canada
+2018,Construction,Construction,8,22603.81,0,Transport Canada,Transports Canada
+2017,Service,Services,373,542775.62,8155.81,Veterans Affairs Canada,Anciens Combattants Canada
+2017,Good,Biens,300,627243.41,0,Veterans Affairs Canada,Anciens Combattants Canada
+2017,Construction,Construction,0,0,0,Veterans Affairs Canada,Anciens Combattants Canada
+2018,Service,Services,335,586830.62,6817.58,Veterans Affairs Canada,Anciens Combattants Canada
+2018,Good,Biens,261,755658.41,1138.5,Veterans Affairs Canada,Anciens Combattants Canada
+2018,Construction,Construction,0,0,0,Veterans Affairs Canada,Anciens Combattants Canada
+2017,Service,Services,35,127982.59,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2017,Good,Biens,18,45216.54,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2017,Construction,Construction,0,0,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2018,Service,Services,50,114890.02,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2018,Good,Biens,23,62541.24,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2018,Construction,Construction,0,0,0,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel)
+2018,Service,Services,5,6298.07,0,Department for Women and Gender Equality,Ministère des Femmes et de l’Égalité des genres
+2018,Good,Biens,1,3821.76,0,Department for Women and Gender Equality,Ministère des Femmes et de l’Égalité des genres
+2018,Construction,Construction,0,0,0,Department for Women and Gender Equality,Ministère des Femmes et de l’Égalité des genres
+2017,Service,Services,97,388839.08,-40425.83,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada
+2017,Good,Biens,39,140015.8,-10565.48,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada
+2017,Construction,Construction,0,0,0,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada
+2018,Service,Services,132,731856.9,-61183.7,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada
+2018,Good,Biens,33,159871.25,-13939.2,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada
+2018,Construction,Construction,0,0,0,Western Economic Diversification Canada,Diversification de l'économie de l'Ouest Canada

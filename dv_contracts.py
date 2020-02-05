@@ -3,7 +3,7 @@ import babel.numbers
 import csv
 import os
 import sys
-
+import traceback
 
 q2017 = ['2016-2017-Q4', '2017-2018-Q1', '2017-2018-Q2', '2017-2018-Q3']
 q2018 = ['2017-2018-Q4', '2018-2019-Q1', '2018-2019-Q2', '2018-2019-Q3']
@@ -33,15 +33,17 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
         try:
             solicit_code = str(c_record['solicitation_procedure_code']).strip()
             if solicit_code in ['Non-competitiv SO/SA'] : solicit_code = 'TN'
-            if (c_record['reporting_period'] in (q2017 + q2018 + q2019)) and (solicit_code not in ['', 'ZC']):
+            if any(ele in c_record['reference_number'] for ele in (q2017 + q2018 + q2019)) and (solicit_code not in ['', 'ZC']):
                 org_id = c_record['owner_org']
-                if c_record['reporting_period'] in q2017:
+                if any(ele in c_record['reference_number'] for ele in q2017):
                     year = '2017'
-                elif c_record['reporting_period'] in q2018:
+                elif any(ele in c_record['reference_number'] for ele in q2018):
                     year = '2018'
-                elif c_record['reporting_period'] in q2019:
+                elif any(ele in c_record['reference_number'] for ele in q2019):
                     year = '2019'
 
+                if c_record['additional_comments_en'] in ["Purchase of Apple iPads"]:
+                    print(year)
 
                 current_org = {}
 
@@ -56,8 +58,8 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
 
                 # retrieve the existing organization record or create it if it does not exist
 
-                if org_id in organizations_over_10k and solicit_code in organizations_over_10k[org_id]:
-                    current_org = organizations_over_10k[org_id][solicit_code]
+                if org_id in organizations_over_10k and year in organizations_over_10k[org_id] and solicit_code in organizations_over_10k[org_id][year]:
+                    current_org = organizations_over_10k[org_id][year][solicit_code]
                 else:
                     current_org = {'department': c_record['owner_org_title'],
                                    'year': year,
@@ -96,11 +98,17 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
 
                 if org_id not in organizations_over_10k:
                     organizations_over_10k[org_id] = {}
-                organizations_over_10k[org_id][solicit_code] = current_org
+                if year not in organizations_over_10k[org_id]:
+                    organizations_over_10k[org_id][year] = {}
+                organizations_over_10k[org_id][year][solicit_code] = current_org
                 row_num += 1
+                if c_record['additional_comments_en'] in ["Purchase of Apple iPads"]:
+                    print('record here:')
+                    print(current_org)
 
         except Exception as x:
             sys.stderr.write("Error: {0}\n".format(x))
+            print(traceback.format_exc())
 
     print('Processed {0} quarterly contracts rows'.format(row_num))
 
@@ -110,11 +118,12 @@ with open(args.annual_contracts, 'r', encoding='utf-8-sig') as contractsa_file:
     c_reader = csv.DictReader(contractsa_file, dialect='excel')
     row_num = 0
     for c_record in c_reader:
+        year = c_record['year']
         try:
-            if c_record['year'] in ['2017','2018','2019']:
+            if year in ['2017','2018','2019']:
                 org_id = c_record['owner_org']
-                if org_id in organizations_under_10k:
-                    current_org = organizations_under_10k[org_id]
+                if org_id in organizations_under_10k and year in organizations_under_10k[org_id]:
+                    current_org = organizations_under_10k[org_id][year]
                 else:
                     current_org = {'department': c_record['owner_org_title'],
                                    'year': c_record['year'],
@@ -149,11 +158,14 @@ with open(args.annual_contracts, 'r', encoding='utf-8-sig') as contractsa_file:
                 current_org['construction_original'] += cvo
                 current_org['construction_amendment'] += cva
                 current_org['construction_count'] += cno
-                organizations_under_10k[org_id] = current_org
+
+                if org_id not in organizations_under_10k:
+                    organizations_under_10k[org_id] = {}
+                organizations_under_10k[org_id][year] = current_org
                 row_num += 1
 
         except Exception as x:
-
+            print(traceback.format_exc())
             sys.stderr.write(repr(x))
     print('Processed {0} annual consolidated contracts rows'.format(row_num))
 
@@ -168,36 +180,37 @@ with open(os.path.join(args.output_directory, 'contracts_viz_under_10k.csv'), 'w
     csv_writer.writeheader()
 
     for org in organizations_under_10k:
-        bi_org_title = str(organizations_under_10k[org]['department']).split('|')
-        department_en = bi_org_title[0].strip()
-        department_fr = bi_org_title[1].strip() if len(bi_org_title) == 2 else department_en
-        row_values = {'year': organizations_under_10k[org]['year'],
-                      'commodity_type_en': 'Service',
-                      'commodity_type_fr': 'Services',
-                      'contracts_count': organizations_under_10k[org]['service_count'],
-                      'original_value': organizations_under_10k[org]['service_original'],
-                      'amendment_value': organizations_under_10k[org]['service_amendment'],
-                      'department_en': department_en,
-                      'department_fr': department_fr}
-        csv_writer.writerow(row_values)
-        row_values = {'year': organizations_under_10k[org]['year'],
-                      'commodity_type_en': 'Good',
-                      'commodity_type_fr': 'Biens',
-                      'contracts_count': organizations_under_10k[org]['goods_count'],
-                      'original_value': organizations_under_10k[org]['goods_original'],
-                      'amendment_value': organizations_under_10k[org]['goods_amendment'],
-                      'department_en': department_en,
-                      'department_fr': department_fr}
-        csv_writer.writerow(row_values)
-        row_values = {'year': organizations_under_10k[org]['year'],
-                      'commodity_type_en': 'Construction',
-                      'commodity_type_fr': 'Construction',
-                      'contracts_count': organizations_under_10k[org]['construction_count'],
-                      'original_value': organizations_under_10k[org]['construction_original'],
-                      'amendment_value': organizations_under_10k[org]['construction_amendment'],
-                      'department_en': department_en,
-                      'department_fr': department_fr}
-        csv_writer.writerow(row_values)
+        for year in organizations_under_10k[org]:
+            bi_org_title = str(organizations_under_10k[org][year]['department']).split('|')
+            department_en = bi_org_title[0].strip()
+            department_fr = bi_org_title[1].strip() if len(bi_org_title) == 2 else department_en
+            row_values = {'year': organizations_under_10k[org][year]['year'],
+                          'commodity_type_en': 'Service',
+                          'commodity_type_fr': 'Services',
+                          'contracts_count': organizations_under_10k[org][year]['service_count'],
+                          'original_value': organizations_under_10k[org][year]['service_original'],
+                          'amendment_value': organizations_under_10k[org][year]['service_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)
+            row_values = {'year': organizations_under_10k[org][year]['year'],
+                          'commodity_type_en': 'Good',
+                          'commodity_type_fr': 'Biens',
+                          'contracts_count': organizations_under_10k[org][year]['goods_count'],
+                          'original_value': organizations_under_10k[org][year]['goods_original'],
+                          'amendment_value': organizations_under_10k[org][year]['goods_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)
+            row_values = {'year': organizations_under_10k[org][year]['year'],
+                          'commodity_type_en': 'Construction',
+                          'commodity_type_fr': 'Construction',
+                          'contracts_count': organizations_under_10k[org][year]['construction_count'],
+                          'original_value': organizations_under_10k[org][year]['construction_original'],
+                          'amendment_value': organizations_under_10k[org][year]['construction_amendment'],
+                          'department_en': department_en,
+                          'department_fr': department_fr}
+            csv_writer.writerow(row_values)
 
 
 # Create the over $10K Contracts file for data visualization
@@ -211,37 +224,38 @@ with open(os.path.join(args.output_directory, 'contracts_viz_over_10k.csv'), 'w'
     csv_writer.writeheader()
 
     for org in organizations_over_10k:
-        for s_code in organizations_over_10k[org]:
-            bi_org_title = str(organizations_over_10k[org][s_code]['department']).split('|')
-            department_en = bi_org_title[0].strip()
-            department_fr = bi_org_title[1].strip() if len(bi_org_title) == 2 else department_en
-            row_values = {'year': organizations_over_10k[org][s_code]['year'],
-                          'commodity_type_en': 'Service',
-                          'commodity_type_fr': 'Services',
-                          'solicitation_code': s_code,
-                          'contracts_count': organizations_over_10k[org][s_code]['service_count'],
-                          'original_value': organizations_over_10k[org][s_code]['service_original'],
-                          'amendment_value': organizations_over_10k[org][s_code]['service_amendment'],
-                          'department_en': department_en,
-                          'department_fr': department_fr}
-            csv_writer.writerow(row_values)
-            row_values = {'year': organizations_over_10k[org][s_code]['year'],
-                          'commodity_type_en': 'Good',
-                          'commodity_type_fr': 'Biens',
-                          'solicitation_code': s_code,
-                          'contracts_count': organizations_over_10k[org][s_code]['goods_count'],
-                          'original_value': organizations_over_10k[org][s_code]['goods_original'],
-                          'amendment_value': organizations_over_10k[org][s_code]['goods_amendment'],
-                          'department_en': department_en,
-                          'department_fr': department_fr}
-            csv_writer.writerow(row_values)
-            row_values = {'year': organizations_over_10k[org][s_code]['year'],
-                          'commodity_type_en': 'Construction',
-                          'commodity_type_fr': 'Construction',
-                          'solicitation_code': s_code,
-                          'contracts_count': organizations_over_10k[org][s_code]['construction_count'],
-                          'original_value': organizations_over_10k[org][s_code]['construction_original'],
-                          'amendment_value': organizations_over_10k[org][s_code]['construction_amendment'],
-                          'department_en': department_en,
-                          'department_fr': department_fr}
-            csv_writer.writerow(row_values)
+        for year in organizations_over_10k[org]:
+            for s_code in organizations_over_10k[org][year]:
+                bi_org_title = str(organizations_over_10k[org][year][s_code]['department']).split('|')
+                department_en = bi_org_title[0].strip()
+                department_fr = bi_org_title[1].strip() if len(bi_org_title) == 2 else department_en
+                row_values = {'year': organizations_over_10k[org][year][s_code]['year'],
+                              'commodity_type_en': 'Service',
+                              'commodity_type_fr': 'Services',
+                              'solicitation_code': s_code,
+                              'contracts_count': organizations_over_10k[org][year][s_code]['service_count'],
+                              'original_value': organizations_over_10k[org][year][s_code]['service_original'],
+                              'amendment_value': organizations_over_10k[org][year][s_code]['service_amendment'],
+                              'department_en': department_en,
+                              'department_fr': department_fr}
+                csv_writer.writerow(row_values)
+                row_values = {'year': organizations_over_10k[org][year][s_code]['year'],
+                              'commodity_type_en': 'Good',
+                              'commodity_type_fr': 'Biens',
+                              'solicitation_code': s_code,
+                              'contracts_count': organizations_over_10k[org][year][s_code]['goods_count'],
+                              'original_value': organizations_over_10k[org][year][s_code]['goods_original'],
+                              'amendment_value': organizations_over_10k[org][year][s_code]['goods_amendment'],
+                              'department_en': department_en,
+                              'department_fr': department_fr}
+                csv_writer.writerow(row_values)
+                row_values = {'year': organizations_over_10k[org][year][s_code]['year'],
+                              'commodity_type_en': 'Construction',
+                              'commodity_type_fr': 'Construction',
+                              'solicitation_code': s_code,
+                              'contracts_count': organizations_over_10k[org][year][s_code]['construction_count'],
+                              'original_value': organizations_over_10k[org][year][s_code]['construction_original'],
+                              'amendment_value': organizations_over_10k[org][year][s_code]['construction_amendment'],
+                              'department_en': department_en,
+                              'department_fr': department_fr}
+                csv_writer.writerow(row_values)

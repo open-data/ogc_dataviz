@@ -32,15 +32,16 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
     for c_record in c_reader:
         try:
             solicit_code = str(c_record['solicitation_procedure_code']).strip()
+            year = c_record['contract_date'].split("-")[0]
             if solicit_code in ['Non-competitiv SO/SA'] : solicit_code = 'TN'
-            if any(ele in c_record['reference_number'] for ele in (q2017 + q2018 + q2019)) and (solicit_code not in ['', 'ZC']):
+            if (year in ['2017', '2018', '2019']) and (solicit_code not in ['', 'ZC']):
                 org_id = c_record['owner_org']
-                if any(ele in c_record['reference_number'] for ele in q2017):
-                    year = '2017'
-                elif any(ele in c_record['reference_number'] for ele in q2018):
-                    year = '2018'
-                elif any(ele in c_record['reference_number'] for ele in q2019):
-                    year = '2019'
+                # if any(ele in c_record['reference_number'] for ele in q2017):
+                #     year = '2017'
+                # elif any(ele in c_record['reference_number'] for ele in q2018):
+                #     year = '2018'
+                # elif any(ele in c_record['reference_number'] for ele in q2019):
+                #     year = '2019'
 
                 if c_record['additional_comments_en'] in ["Purchase of Apple iPads"]:
                     print(year)

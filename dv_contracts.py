@@ -31,10 +31,10 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
     row_num = 0
     for c_record in c_reader:
         try:
-            solicit_code = str(c_record['solicitation_procedure_code']).strip()
+            solicit_code = str(c_record['solicitation_procedure']).strip()
             year = c_record['contract_date'].split("-")[0]
             if solicit_code in ['Non-competitiv SO/SA'] : solicit_code = 'TN'
-            if (year in ['2017', '2018', '2019']) and (solicit_code not in ['', 'ZC']):
+            if (year in ['2017', '2018', '2019','2020','2021']) and (solicit_code not in ['', 'ZC']):
                 org_id = c_record['owner_org']
                 # if any(ele in c_record['reference_number'] for ele in q2017):
                 #     year = '2017'
@@ -42,9 +42,6 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
                 #     year = '2018'
                 # elif any(ele in c_record['reference_number'] for ele in q2019):
                 #     year = '2019'
-
-                if c_record['additional_comments_en'] in ["Purchase of Apple iPads"]:
-                    print(year)
 
                 current_org = {}
 
@@ -79,22 +76,22 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
                 is_original = (av == 0)
                 if is_original:
                     current_org['contact_count'] += 1
-                    if c_record['commodity_type_code'] == 'S':
+                    if c_record['commodity_type'] == 'S':
                         current_org['service_original'] += cv
                         current_org['service_count'] += 1
-                    elif c_record['commodity_type_code'] == 'G':
+                    elif c_record['commodity_type'] == 'G':
                         current_org['goods_original'] += cv
                         current_org['goods_count'] += 1
-                    elif c_record['commodity_type_code'] == 'C':
+                    elif c_record['commodity_type'] == 'C':
                         current_org['construction_original'] += cv
                         current_org['construction_count'] += 1
                 else:
                     current_org['contact_count'] += 1
-                    if c_record['commodity_type_code'] == 'S':
+                    if c_record['commodity_type'] == 'S':
                         current_org['service_amendment'] += av
-                    elif c_record['commodity_type_code'] == 'G':
+                    elif c_record['commodity_type'] == 'G':
                         current_org['goods_amendment'] += av
-                    elif c_record['commodity_type_code'] == 'C':
+                    elif c_record['commodity_type'] == 'C':
                         current_org['construction_amendment'] += av
 
                 if org_id not in organizations_over_10k:
@@ -103,9 +100,6 @@ with open(args.quarterly_contracts, 'r', encoding='utf-8-sig') as contracts_file
                     organizations_over_10k[org_id][year] = {}
                 organizations_over_10k[org_id][year][solicit_code] = current_org
                 row_num += 1
-                if c_record['additional_comments_en'] in ["Purchase of Apple iPads"]:
-                    print('record here:')
-                    print(current_org)
 
         except Exception as x:
             sys.stderr.write("Error: {0}\n".format(x))
@@ -121,7 +115,7 @@ with open(args.annual_contracts, 'r', encoding='utf-8-sig') as contractsa_file:
     for c_record in c_reader:
         year = c_record['year']
         try:
-            if year in ['2017','2018','2019']:
+            if year in ['2017','2018','2019','2020','2021']:
                 org_id = c_record['owner_org']
                 if org_id in organizations_under_10k and year in organizations_under_10k[org_id]:
                     current_org = organizations_under_10k[org_id][year]
